@@ -1,2 +1,4 @@
+removed_sources:
+  Test-CPAN-Meta-0.18.tar.gz: 520822389a6c3369ebce39bbaf46c4467638faad
 sources:
-  "Test-CPAN-Meta-0.18.tar.gz": 520822389a6c3369ebce39bbaf46c4467638faad
+  Test-CPAN-Meta-0.22.tar.gz: dfda9f33d35626bcf2356634b8eb6273a00ae20d
