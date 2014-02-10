@@ -1,5 +1,5 @@
 %define modname	Test-CPAN-Meta
-%define modver 0.22
+%define modver 0.23
 
 Summary:	Validation of META.yml specification elements
 Name:		perl-%{modname}
@@ -39,5 +39,6 @@ manpage and the Module::Install manpage.
 %doc Changes README LICENSE
 %{perl_vendorlib}/*
 %{_mandir}/man3/*
+
 
 
