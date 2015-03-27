@@ -1,14 +1,14 @@
 %define modname	Test-CPAN-Meta
-%define modver 0.23
+%define modver 0.24
 
 Summary:	Validation of META.yml specification elements
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	5
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}
-Source0:	http://www.cpan.org/modules/by-module/Test/Test-CPAN-Meta-%{modver}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Test/%{modname}-%{modver}.tar.gz
 BuildArch:	noarch
 BuildRequires:	perl(Parse::CPAN::Meta)
 BuildRequires:	perl(Test::Builder)
@@ -26,7 +26,7 @@ manpage and the Module::Install manpage.
 %setup -qn %{modname}-%{modver}
 
 %build
-%__perl Makefile.PL INSTALLDIRS=vendor
+perl Makefile.PL INSTALLDIRS=vendor
 %make
 
 %check
@@ -39,6 +39,3 @@ manpage and the Module::Install manpage.
 %doc Changes README LICENSE
 %{perl_vendorlib}/*
 %{_mandir}/man3/*
-
-
-
