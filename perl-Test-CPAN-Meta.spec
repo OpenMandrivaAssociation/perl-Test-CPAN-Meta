@@ -10,6 +10,7 @@ Group:		Development/Perl
 Url:		https://search.cpan.org/dist/%{modname}
 Source0:	http://www.cpan.org/modules/by-module/Test/Test-CPAN-Meta-%{modver}.tar.gz
 BuildArch:	noarch
+BuildRequires:	make
 BuildRequires:	perl(Parse::CPAN::Meta)
 BuildRequires:	perl(Test::Builder)
 BuildRequires:	perl(Test::More)
